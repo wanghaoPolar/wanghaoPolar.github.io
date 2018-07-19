@@ -13,7 +13,74 @@
 两个命名神秘到让人怀疑是否存在的方法
 
 atob：将 base64 encode 过的字符串 decode 为原始 ascii 字符串
+
 btoa：将 ascii 字符串 encode 为 base64 编码的字符串
+
+比如：wiki 上的表格
+
+<table class="wikitable">
+
+<tbody><tr>
+<th scope="row">原始 ascii 字符串
+</th>
+<td colspan="8" style="text-align:center"><b>M</b>
+</td>
+<td colspan="8" style="text-align:center"><b>a</b>
+</td>
+<td colspan="8" style="text-align:center"><b>n</b>
+</td></tr>
+<tr>
+<th scope="row">原始数据
+</th>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1
+</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1
+</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0
+</td></tr>
+<tr>
+<th scope="row">八位（byte）用六位（base64）来解读
+</th>
+<td colspan="6" style="text-align:center">19
+</td>
+<td colspan="6" style="text-align:center">22
+</td>
+<td colspan="6" style="text-align:center">5
+</td>
+<td colspan="6" style="text-align:center">46
+</td></tr>
+<tr>
+<th scope="row">Base64 数据对应的 ascii
+</th>
+<td colspan="6" style="text-align:center"><b>T</b>
+</td>
+<td colspan="6" style="text-align:center"><b>W</b>
+</td>
+<td colspan="6" style="text-align:center"><b>F</b>
+</td>
+<td colspan="6" style="text-align:center"><b>u</b>
+</td></tr></tbody></table>
 
 ## 在浏览器中将 base64 转为 Uint8Array
 ```typescript
