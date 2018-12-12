@@ -10,7 +10,6 @@
 5. ascii 只有 95 个字符，64 是最接近 95 的 2 的 power
 
 ## atob, btoa
-两个命名神秘到让人怀疑是否存在的方法
 
 atob：将 base64 encode 过的字符串 decode 为原始 ascii 字符串
 
