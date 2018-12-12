@@ -47,6 +47,7 @@ typedef struct {
 ```
 
 实际的内存分配可能类似于：
+
 | Field Type | Field Name | Field Offset | Field Size | Field End |
 | ---------- | ---------- | ------------ | ---------- | --------- |
 | char | a | 0 | 1 | 1 |
@@ -54,6 +55,7 @@ typedef struct {
 | long | b | 2 | 4 | 6 |
 | char | c | 6 | 1 | 7 |
 | | padding | 7 | 1 | 8 |
+
 Total Size in Bytes: 8
 
 ### api 比较
